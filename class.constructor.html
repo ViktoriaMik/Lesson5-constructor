@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // let user = {
+        //     name: 'victor',
+        //     age: 45,
+        //     greeting: function() {
+        //         console.log('hello' + this.name);
+        //     }
+        // }
+        // user.greeting()
+
+        // function User(name, age) {
+        //     this.name = name;
+        //     this.age = age;
+
+        // }
+        // let myUser = new User('vika', 23)
+        // console.log(myUser);
+
+        // function User2(name, age, fn) {
+        //     this.name = name;
+        //     this.age = age;
+        //     // this.greeting = function(msg) {
+        //     //     console.log(`${msg} ${this.name} ${this.age}`);
+        //     this.greeting = fn;
+        // }
+
+        // // }
+
+        // // let us2 = new User2('vika', 32);
+        // let us2 = new User2('vika', 32, function(msg) {
+        //     console.log(msg);
+        // });
+        // us2.greeting('hello')
+
+        // function Element(tag, txt, background, color) {
+        //     this.tag = tag;
+        //     this.txt = txt;
+        //     this.background = background;
+        //     this.color = color;
+        //     this.createElement = function() {
+        //         let newElement = document.createElement(this.tag)
+        //         newElement.innerText = this.txt;
+        //         newElement.style.background = this.background;
+        //         newElement.style.color = this.color;
+        //         document.body.appendChild(newElement)
+
+        //     }
+        // }
+        // let el1 = new Element('div', 'lorem', 'grey', 'tomato')
+        //     // console.log(el1);
+        // el1.createElement()
+        class User {
+            constructor(name, age) {
+                this.name = name;
+                this.age = age;
+            }
+            greeting(msg) {
+                console.log(`${msg} ${this.name} ${this.age}`)
+            }
+        }
+        let userMy = new User('vasya', 67)
+        userMy.greeting("hello")
+    </script>
+</body>
+
+</html>
